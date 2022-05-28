@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    width: 700px;
+    margin: auto;
+    margin-top:50px
+}
+
+.acardion .acardion-title{
+    background:#e6193b;
+    font-size: 20px;
+    padding:10px;
+    color: #fff;
+    border: 2px soid #740d1e;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+
+.acardion .acardion-title::before{
+    content: '+';
+    width: 15px;
+    height:15px;
+    margin-left:10px;
+}
+
+.acardion .acardion-content{
+    background: #d3d3d3;
+    overflow: hidden;
+    height:0;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s e;
+    -moz-transition: all .4s e; 
+    -ms-transition: all .4s e;
+    -o-transition: all .4s e;
+}
+
+
+.acardion .acardion-title.active::before{
+    content: '-';
+}
+
